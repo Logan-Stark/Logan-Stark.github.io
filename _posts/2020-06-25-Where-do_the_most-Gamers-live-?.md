@@ -6,7 +6,7 @@ tags: [Video Games]
 comments: true
 ---
 
-![Gamers](https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60){: .mx-auto.d-block :}
+![Gamers](https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60){:.mx-auto.d-block :}
 
   In this post we will be exploring the dataset 'Video Game Sales' from Kaggle.com. Using this data set I will try to find what region of the world has the highest concentration of video game players, as well as, what kind of video games are they playing? Our dataset gives us the number of video game sales for the top selling 16000 video games by region. The 3 major regions that are used when looking at the sale of Video games are North America, Europe, Japan, and Other. The region of Other in this data set pertains to the rest of the world. Since the sales in Other are much smaller than the other three we will not use it in our analysis. In order to get a an initial look into our data, I made a line graph plotting the top 100 selling video games by their sales in each region.
 
