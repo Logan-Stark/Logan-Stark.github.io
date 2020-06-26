@@ -33,7 +33,9 @@ By looking at this simple Funnel plot we can see that North America does indeed 
 {% include Regions-by-Genre.html %}
 
 As you can see this has dramatically changed tthe trends we saw in our first line graph. Japan is now shown to have the highest sales per person on average. Europe also now has the lowest number of sales
-
+ 
+ 
+ if you see this it did not work
 
 
 {% include Std-Regions-by-Genre.html %}
