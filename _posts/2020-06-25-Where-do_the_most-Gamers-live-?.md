@@ -12,7 +12,7 @@ comments: true
 
 ## North America, Eruope, and Japan sales of the top 100 Video games
 
-https://plotly.com/~Logan-Stark/9/
+{% include index.html %}
 
 By looking at this graph we can start to get an idea of what kind of trends exist between the three regions. we can see that the line representing North America, on average, rises above both Europe and Japan in units sold. There is a similar trend between with europes sales rising above that of japan. However, since this is only the data from 100 games these trends may not be true for the entire data set. that being said we can form a hypothesis that North America has the highest number of sales.
 
