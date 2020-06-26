@@ -39,3 +39,5 @@ Japan is now, even more, the most concentrated source of gamers. We can also see
 
 I hope this information has been helpful to you. 
 
+link to notebook code https://github.com/Logan-Stark/Notebook-Code
+
