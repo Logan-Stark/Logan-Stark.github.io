@@ -12,7 +12,7 @@ comments: true
 
 ## North America, Eruope, and Japan sales of the top 100 Video games
 
-{% include index.html %}
+{% include top-100-sales.html %}
 
 By looking at this graph we can start to get an idea of what kind of trends exist between the three regions. we can see that the line representing North America, on average, rises above both Europe and Japan in units sold. There is a similar trend between with europes sales rising above that of japan. However, since this is only the data from 100 games these trends may not be true for the entire data set. that being said we can form a hypothesis that North America has the highest number of sales.
 
@@ -20,7 +20,7 @@ to Gather more information I plotted a bar graph showing the number of sales by 
 
 ## Genre by total number of Regional sales
 
-{% include top-100sales.html %}
+{% include index.html %}
 
 The bar graph shows a similar trend in regional sales. we can see that North America does indeed have the highest number of sales, followed by Europe and Japan. we are also now able to see what kind of games each region enjoys playing the most. the the most part it would seem that gamers in North America and Europe prefer to play action, shooter, and sports games. Japan however,seems to avoid shooter games. they Japnas most played genre of game is Role-playing.  While this may mean that more people are buying video games in North america it doesn't mean they have the highest concentration. This is because the size and population of these regions differ dramatically. for instance the population of North ameraca (579 Million) is roughly 5 times greater than that of Japan(126.5 Million). in order to Show the true concentration of gamers I have standardized the data by population and replotted our line graph below.
 
@@ -30,7 +30,7 @@ By looking at this simple Funnel plot we can see that North America does indeed 
 
 ## Standardized (North America, Eruope, and Japan sales of the top 100 Video games)
 
-{% include Regions-by-Genre.html %}
+{% include Std-top-100-sales.html %}
 
 As you can see this has dramatically changed tthe trends we saw in our first line graph. Japan is now shown to have the highest sales per person on average. Europe also now has the lowest number of sales
  
