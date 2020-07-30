@@ -50,7 +50,7 @@ and test their accuracy. The classifiers I used to train these models were Logis
 
   Another way we can see how our features impact our model is with a Shaply plot. With a Shaply plot, we can measure the pressure each feature exhibits on a single row. Below you can see the red bar consists of features pushing our model to classify the movie as successful. Meanwhile, the blue bar shows features pushing our model to classify the movie as unsuccessful.
   
-![image](/assets/img/Shaply_plot.png){:class="img-responsive"}
+![image](/assets/img/){:class="img-responsive"}
  
 ## Conclusion
 
