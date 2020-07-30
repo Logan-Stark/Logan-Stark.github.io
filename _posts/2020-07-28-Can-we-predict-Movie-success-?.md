@@ -36,7 +36,7 @@ and test their accuracy. the classifiers i used to train these models were Logis
 
   Since we know that the XGBClassifier model performs the best, we can dive deeper and try to see what features it sees as the most important. by using the tool known ELFI5 we are able to list the features of our model by inportance in descending order. Wen can see that num_user_voted, title_year, and duration are the 3 most important features our model looks at. 
 
-Insert graph
+{% include broken helmet.jpg%}
 
   Using PDP plots we can see how our model looks at the values of each feature. in the case of num_user_voted we can see that higher the value is for this feature, the more likely the movie is to be successful. this means the more people who were willing to to go online and vote for the movie, the more likely the movie is to be successful.
   
