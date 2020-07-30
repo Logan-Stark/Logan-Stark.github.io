@@ -26,7 +26,7 @@ comments: true
   
   Using our new target we can make a baseline model for our future models to compete against. We can make our baseline model by computing the value counts of our target and graphing it. In our graph 1 represents successful while 0 represents unsuccessful. Our graph shows an almost 50/50 split in movie success. Since the majority class is 1 our baseline to beat in our models will be 52% 
   
-![image](/assets/img/Baseline.png){:class="img-responsive"}
+![image](/assets/img/Baseline2.png){:class="img-responsive"}
 
 ## Machine learning
 
