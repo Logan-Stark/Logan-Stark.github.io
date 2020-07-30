@@ -6,7 +6,7 @@ tags: [Movies]
 comments: true
 ---
 
-Insert image of movie related thing.
+![Movies](https://cdn.pixabay.com/photo/2017/11/24/10/43/admission-2974645_960_720.jpg){:.mx-auto.d-block :}
 
 ## Introduction
 
