@@ -22,11 +22,19 @@ Insert image of movie related thing.
   
 ## Engineered models
 
-  To 
+  After removing features with High cardinality and missing values i split my data into a training, validation, and testing set. I Used these sets to fit 4 different models
+and test their accuracy. the classifiers i used to train these models were Logistic regression, RandomForestClaassifier, and XGBClassifier. Each of these classfiers is unique in their own way.
+
+**Logistic Regression** is a Linear Classification model. Logistic regression models use a sigmoidal function. with this function it tries to find the probabilities of the target classes.
+
+**RandomForestClassifier** is whats known as a tree ensemble method. the model resembles a tree by branching down an origin until it arrives at a givin conclusion. this would be an example of one tree. this model also uses what is known as bagging. bagging is where our model runs multiple trees at once in parralel. it then makes a decision based off the collective conclusions of all the trees
+
+**XGBClassifier** is also a tree ensemble method. However, unlike the RandomForestCLassifier, XGBClassifiers run trees sequentually not in parallel. what this means is rather than taking the average of multiple trees, the XGBClassifier will creat a weak model and expose it to trees one at a time. the model trys to improve from each tree it is introduced to until it becomes a strong model for prediction.
+
   
 ## Feature importance
 
-  Now that we know that the XGBClassifier model performs the best, we can now dive deeper and try to see what features it sees as the most important. by using the tool known ELFI5 we are able to list the features of our model by inportance in descending order. Wen can see that num_user_voted, title_year, and duration are the 3 most important features our model looks at. 
+  Since we know that the XGBClassifier model performs the best, we can dive deeper and try to see what features it sees as the most important. by using the tool known ELFI5 we are able to list the features of our model by inportance in descending order. Wen can see that num_user_voted, title_year, and duration are the 3 most important features our model looks at. 
 
 Insert graph
 
