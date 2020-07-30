@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Predicting Success
-subtitle:Can we use machine learning to predict how successful a movie will be?
+subtitle: Can we use machine learning to predict how successful a movie will be?
 tags: [Movies]
 comments: true
 ---
+
 Insert image of movie related thing.
 
 ## Introduction
