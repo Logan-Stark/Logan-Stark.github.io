@@ -42,7 +42,7 @@ and test their accuracy. The classifiers I used to train these models were Logis
 
   Using PDP plots we can see how our model looks at the values of each feature. In the case of num_user_voted, we can see that the higher the value is for this feature, the more likely the movie is to be successful. This means the more people who were willing to go online and vote for the movie, the more likely the movie is to be successful.
   
-[image](Logan-Stark.github.io/assets/img/PDP_num_user_vote.png){:class="img-responsive"}
+[image](/assets/img/PDP_num_user_vote.png){:class="img-responsive"}
 
   When we look at the PDP plot of duration we see the opposite situation. The longer the duration of a movie, the higher the chance that the model will classify the movie as unsuccessful. This could signal that people prefer movies to run right around the 90 minutes mark.
 
