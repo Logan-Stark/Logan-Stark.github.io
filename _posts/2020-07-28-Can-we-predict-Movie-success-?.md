@@ -11,7 +11,7 @@ comments: true
 ## Introduction
 
   One of the things I have missed the most during quarantine is going out to the movies. Since all the theatres are closed its made me think "what makes a movie successful?". There are hundreds of thousands of different movies that have been produced over the years. some of these movies break box office records while others will go unheard of. The goal of this post is to make a predictive model for movie success and explain important features.
-  
+  ![image](/assets/img/broken helmet.jpg){:class="img-responsive"}
 ## Data exploration and Target selection
   
   We will be using data gathered from the Movies.Meta dataset on kaggle.com. This data contains many different features such as revenue, Facebook likes, actors, and duration. For my model, I decided to create a new feature called [success] to serve as our target. [success] will help us gauge how successful a given movie is by taking the gross revenue made and dividing it by the budget. By doing this we receive a number that shows us how much money was made with respect to the money already spent on the budget. For instance, if a movie's success is less than 1 we know the movie spent more than it made. We can then make our target binary by assigning any movie that has a success of less than 1 to unsuccessful and any greater than 1 successful.
