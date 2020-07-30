@@ -43,3 +43,11 @@ and test their accuracy. The classifiers I used to train these models were Logis
 Insert graph
 
   When we look at the PDP plot of duration we see the opposite situation. The longer the duration of a movie, the higher the chance that the model will classify the movie as unsuccessful. This could signal that people prefer movies to run right around the 90 minutes mark.
+
+  Another way we can see how our features impact our model is with a Shaply plot. With a Shaply plot, we can measure the pressure each feature exhibits on a single row. Below you can see the red bar consists of features pushing our model to classify the movie as successful. Meanwhile, the blue bar shows features pushing our model to classify the movie as unsuccessful.
+  
+  insert shaply
+  
+## Conclusion
+
+  Looking back at our results, we found that our XGBClassifier model was our most accurate model. We were able to build a model capable of predicting movie success with a 74.2 test accuracy. Diving deeper, we also saw what areas contribute the most to a movie being successful. We can see how having many people willing to review a movie online can boost success. While runtime can negatively affect your movie if you let it go on too long.
