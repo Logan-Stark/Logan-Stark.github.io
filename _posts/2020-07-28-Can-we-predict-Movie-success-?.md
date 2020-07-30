@@ -18,6 +18,8 @@ comments: true
   
 ## Data leakage
 
+![Leak](https://cdn.pixabay.com/photo/2017/06/18/03/43/tap-2414460_960_720.jpg){:.mx-auto.d-block :}
+
   Because we engineered our binary target [success] from existing features we are now exposed to data leakage. Data leakage is when the answers we are trying to predict are accidentally leaked to our models. This causes our model to cheat and get a much higher accuracy then it should. This will lead to a bad predictive model. In our case, if we leave the features [gross, budget] in our training data our model will overfit. To fix this problem I drop both of these features from our dataset.  
   
 ## Baseline model
