@@ -11,7 +11,7 @@ comments: true
 ## Introduction
 
   One of the things I have missed the most during quarantine is going out to the movies. Since all the theatres are closed its made me think "what makes a movie successful?". There are hundreds of thousands of different movies that have been produced over the years. some of these movies break box office records while others will go unheard of. The goal of this post is to make a predictive model for movie success and explain important features.
-  ![image](/assets/img/broken helmet.jpg){:class="img-responsive"}
+ 
 ## Data exploration and Target selection
   
   We will be using data gathered from the Movies.Meta dataset on kaggle.com. This data contains many different features such as revenue, Facebook likes, actors, and duration. For my model, I decided to create a new feature called [success] to serve as our target. [success] will help us gauge how successful a given movie is by taking the gross revenue made and dividing it by the budget. By doing this we receive a number that shows us how much money was made with respect to the money already spent on the budget. For instance, if a movie's success is less than 1 we know the movie spent more than it made. We can then make our target binary by assigning any movie that has a success of less than 1 to unsuccessful and any greater than 1 successful.
@@ -20,7 +20,7 @@ comments: true
   
   Using our new target we can make a baseline model for our future models to compete against. We can make our baseline model by computing the value counts of our target and graphing it. In our graph 1 represents successful while 0 represents unsuccessful. Our graph shows an almost 50/50 split in movie success. Since the majority class is 1 our baseline to beat in our models will be 52% 
   
-[image](/assets/img/Baseline.png){:class="img-responsive"}
+![image](/assets/img/Baseline.png){:class="img-responsive"}
 
 ## Engineered models
 
@@ -50,8 +50,6 @@ and test their accuracy. The classifiers I used to train these models were Logis
 
   Another way we can see how our features impact our model is with a Shaply plot. With a Shaply plot, we can measure the pressure each feature exhibits on a single row. Below you can see the red bar consists of features pushing our model to classify the movie as successful. Meanwhile, the blue bar shows features pushing our model to classify the movie as unsuccessful.
   
-![image](/assets/img/broken helmet.jpg)
-  It didnt work again
 ## Conclusion
 
   Looking back at our results, we found that our XGBClassifier model was our most accurate model. We were able to build a model capable of predicting movie success with a 74.2 test accuracy. Diving deeper, we also saw what areas contribute the most to a movie being successful. We can see how having many people willing to review a movie online can boost success. While runtime can negatively affect your movie if you let it go on too long.
