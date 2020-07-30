@@ -20,6 +20,8 @@ comments: true
   
   Using our new target we can make a baseline model for our future models to compete against. We can make our baseline model by computing the value counts of our target and graphing it. In our graph 1 represents successful while 0 represents unsuccessful. Our graph shows an almost 50/50 split in movie success. Since the majority class is 1 our baseline to beat in our models will be 52% 
   
+[image](Logan-Stark.github.io/assets/img/Baseline.png){:class="img-responsive"}
+
 ## Engineered models
 
   After removing features with High cardinality and missing values I split my data into a training, validation, and testing set. I Used these sets to fit 4 different models
@@ -36,17 +38,19 @@ and test their accuracy. The classifiers I used to train these models were Logis
 
   Since we know that the XGBClassifier model performs the best, we can dive deeper and try to see what features it sees as the most important. By using the tool known ELFI5 we can list the features of our model by importance in descending order. We can see that num_user_voted, title_year, and duration are the 3 most important features our model looks at. 
 
-![image](Logan-Stark.github.io/assets/img/broken helmet.jpg){:class="img-responsive"}
+![image](Logan-Stark.github.io/assets/img/ELFI5.png){:class="img-responsive"}
 
   Using PDP plots we can see how our model looks at the values of each feature. In the case of num_user_voted, we can see that the higher the value is for this feature, the more likely the movie is to be successful. This means the more people who were willing to go online and vote for the movie, the more likely the movie is to be successful.
   
-Insert graph
+[image](Logan-Stark.github.io/assets/img/PDP_num_user_vote.png){:class="img-responsive"}
 
   When we look at the PDP plot of duration we see the opposite situation. The longer the duration of a movie, the higher the chance that the model will classify the movie as unsuccessful. This could signal that people prefer movies to run right around the 90 minutes mark.
 
+[image](Logan-Stark.github.io/assets/img/PDP_duration.png){:class="img-responsive"}
+
   Another way we can see how our features impact our model is with a Shaply plot. With a Shaply plot, we can measure the pressure each feature exhibits on a single row. Below you can see the red bar consists of features pushing our model to classify the movie as successful. Meanwhile, the blue bar shows features pushing our model to classify the movie as unsuccessful.
   
-  insert shaply
+[image](Logan-Stark.github.io/assets/img/broken helmet.jpg){:class="img-responsive"}
   
 ## Conclusion
 
