@@ -14,19 +14,19 @@ comments: true
  
 ## Data exploration and target selection
   
-  We will be using data gathered from the Movies.Meta dataset on kaggle.com. This data contains many different features such as revenue, Facebook likes, actors, and duration. For my model, I decided to create a new feature called [success] to serve as our target. [success] will help us gauge how successful a given movie is by taking the gross revenue made and dividing it by the budget. By doing this we receive a number that shows us how much money was made with respect to the money already spent on the budget. For instance, if a movie's success is less than 1 we know the movie spent more than it made. We can then make our target binary by assigning any movie that has a success of less than 1 to unsuccessful and any greater than 1 successful.
+  We will be using data gathered from the Movies.Meta dataset on kaggle.com. This data contains many different features such as revenue, Facebook likes, actors, and duration. For my model, I decided to create a new feature called success to serve as our target. success will help us gauge how successful a given movie is by taking the gross revenue made and dividing it by the budget. By doing this we receive a number that shows us how much money was made with respect to the money already spent on the budget. For instance, if a movie's success is less than 1 we know the movie spent more than it made. We can then make our target binary by assigning any movie that has a success of less than 1 to unsuccessful and any greater than 1 successful.
   
 ## Data leakage
 
 ![Leak](https://cdn.pixabay.com/photo/2017/06/18/03/43/tap-2414460_960_720.jpg){:.mx-auto.d-block :}
 
-  Because we engineered our binary target [success] from existing features we are now exposed to data leakage. Data leakage is when the answers we are trying to predict are accidentally leaked to our models. This causes our model to cheat and get a much higher accuracy then it should. This will lead to a bad predictive model. In our case, if we leave the features [gross, budget] in our training data our model will overfit. To fix this problem I drop both of these features from our dataset.  
+  Because we engineered our binary target success from existing features we are now exposed to data leakage. Data leakage is when the answers we are trying to predict are accidentally leaked to our models. This causes our model to cheat and get a much higher accuracy then it should. This will lead to a bad predictive model. In our case, if we leave the features [gross, budget] in our training data our model will overfit. To fix this problem I drop both of these features from our dataset.  
   
 ## Baseline model
   
   Using our new target we can make a baseline model for our future models to compete against. We can make our baseline model by computing the value counts of our target and graphing it. In our graph 1 represents successful while 0 represents unsuccessful. Our graph shows an almost 50/50 split in movie success. Since the majority class is 1 our baseline to beat in our models will be 52% 
   
-![image](/assets/img/Baseline2.png){:class="img-responsive"}
+![image](/assets/img/Baseline.png){:class="img-responsive"}
 
 ## Machine learning
 
@@ -39,7 +39,21 @@ and test their accuracy. The classifiers I used to train these models were Logis
 
 **XGBClassifier** is also a tree ensemble method. However, unlike the RandomForestCLassifier, XGBClassifiers run trees sequentially not in parallel. What this means is rather than taking the average of multiple trees, the XGBClassifier will create a weak model and expose it to trees one at a time. The model tries to improve from each tree it is introduced to until it becomes a strong model for prediction.
 
-  
+After constructing all of my models I tested them for accuracy. all of the results are as follows.
+
+## Results
+**Logistic Regression**
+Training accuracy: **71.01%**
+Validation accuracy: **72.39%**
+
+**RandomForestClassifier**
+Training accuracy: **78.99%**
+Validation accuracy: **80.47%**
+
+**XGBClassifier**
+Training accuracy: **78.93%**
+Validation accuracy: **81.31%**
+
 ## Feature importance
 
   Since we know that the XGBClassifier model performs the best, we can dive deeper and try to see what features it sees as the most important. By using the tool known ELFI5 we can list the features of our model by importance in descending order. We can see that num_user_voted, title_year, and duration are the 3 most important features our model looks at. 
