@@ -43,15 +43,21 @@ After constructing all of my models I tested them for accuracy. all of the resul
 
 ## Results
 **Logistic Regression**
+
 Training accuracy: **71.01%**
+
 Validation accuracy: **72.39%**
 
 **RandomForestClassifier**
+
 Training accuracy: **78.99%**
+
 Validation accuracy: **80.47%**
 
 **XGBClassifier**
+
 Training accuracy: **78.93%**
+
 Validation accuracy: **81.31%**
 
 ## Feature importance
